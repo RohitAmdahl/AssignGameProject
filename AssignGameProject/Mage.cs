@@ -16,7 +16,7 @@ namespace AssignGameProject
         public override void LevelUp()
         {
             Level++;
-            BaseAttributes.Increase(1, 1, 5);  
+            BaseAttributes.Increase( 1, 1, 5);  
         }
 
         public override double Damage()

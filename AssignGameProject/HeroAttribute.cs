@@ -36,6 +36,11 @@ namespace AssignGameProject
         {
             throw new NotImplementedException();
         }
+
+        public void Increase(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

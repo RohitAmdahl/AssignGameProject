@@ -19,7 +19,7 @@ namespace AssignGameProject
         public override void LevelUp()
         {
             Level++; // Increment the level
-            BaseAttributes.Increase(3, 2, 1); // Adjust attribute increases for a Warrior class
+            BaseAttributes.Increase(3, 2, 1); 
         }
 
         public override double Damage()

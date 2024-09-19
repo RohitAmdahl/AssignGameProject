@@ -19,7 +19,7 @@ namespace AssignGameProjectTests
             Assert.Equal("player", name);
         }
 
-        // Test 2: Is the new hero’s starting level correct?
+        
         [Fact]
         public void NewHero_StartingLevelIsCorrect()
         {
@@ -33,7 +33,7 @@ namespace AssignGameProjectTests
             Assert.Equal(1, level);
         }
 
-        // Test 3: Is the new hero’s starting hero attributes correct?
+       
         [Fact]
         public void NewHero_StartingAttributesAreCorrect()
         {
@@ -49,7 +49,7 @@ namespace AssignGameProjectTests
             Assert.Equal(8, attributes.Intelligence);
         }
 
-        // Test 4: When the hero levels up, is the new level correct?
+       
         [Fact]
         public void Hero_LevelUp_NewLevelIsCorrect()
         {
@@ -64,7 +64,7 @@ namespace AssignGameProjectTests
             Assert.Equal(2, mage.Level);
         }
 
-        // Test 5: When the hero levels up, are the new hero attributes correct?
+       
         [Fact]
         public void Hero_LevelUp_NewAttributesAreCorrect()
         {
@@ -81,7 +81,7 @@ namespace AssignGameProjectTests
             Assert.Equal(13, attributes.Intelligence);
         }
 
-        // Test 6: Can the hero equip a valid weapon successfully?
+        
         [Fact]
         public void Hero_EquipValidWeapon_SuccessfullyEquipped()
         {
@@ -96,7 +96,7 @@ namespace AssignGameProjectTests
             Assert.Equal(validWeapon, mage.Equipment[SlotEnumsTypes.Weapon]);
         }
 
-        // Test 7: Can the hero equip an invalid weapon - level too high?
+        
         [Fact]
         public void Hero_EquipInvalidWeapon_LevelTooHigh_ThrowsException()
         {
@@ -108,7 +108,7 @@ namespace AssignGameProjectTests
             Assert.Throws<InvalidOperationException>(() => mage.Equip(invalidWeapon));
         }
 
-        // Test 8: Can the hero equip an invalid weapon - wrong weapon type?
+        
         [Fact]
         public void Hero_EquipInvalidWeapon_WrongType_ThrowsException()
         {

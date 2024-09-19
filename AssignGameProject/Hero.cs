@@ -66,14 +66,15 @@ namespace AssignGameProject
 
         public virtual HeroAttribute TotalAttributes()
         {
-            // Add base attributes and attributes from equipped armor
+            
             HeroAttribute totalAttributes = new(BaseAttributes.Strength, BaseAttributes.Dexterity, BaseAttributes.Intelligence);
 
             foreach (var item in Equipment.Values)
             {
                 if (item is Armor armor)
-                
+                {
                     totalAttributes = totalAttributes.Add(armor.ArmorAttribute);
+                }
                 
             }
             return totalAttributes;
