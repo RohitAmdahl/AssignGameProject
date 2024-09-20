@@ -26,3 +26,8 @@
 -  Damage – damage is calculated on the fly and not stored
 -  TotalAttributes – calculated on the fly and not stored
 -  Display – details of Hero to be displayed
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
